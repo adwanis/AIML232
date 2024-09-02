@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="mum_in_town">
+			<state id="true" />
+			<state id="false" />
+			<probabilities>0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="txts">
+			<state id="none" />
+			<state id="some" />
+			<state id="many" />
+			<parents>mum_in_town</parents>
+			<probabilities>0.1 0.2 0.7 0.5 0.4 0.1</probabilities>
+		</cpt>
+		<cpt id="socks">
+			<state id="organised" />
+			<state id="chaos" />
+			<parents>mum_in_town</parents>
+			<probabilities>0.75 0.25 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="dishes">
+			<state id="dirty" />
+			<state id="clean" />
+			<state id="put_away" />
+			<parents>mum_in_town</parents>
+			<probabilities>0.1 0.8 0.1 0.7 0.2 0.1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.1.4109.0 ACADEMIC" name="Network1">
+			<node id="mum_in_town">
+				<name>mum in town</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="12" />
+				<position>562 171 661 232</position>
+				<barchart active="true" width="128" height="66" />
+			</node>
+			<node id="txts">
+				<name>txts</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="12" />
+				<position>301 433 387 486</position>
+				<barchart active="true" width="128" height="88" />
+			</node>
+			<node id="socks">
+				<name>sock draw</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="12" />
+				<position>561 423 662 486</position>
+				<barchart active="true" width="152" height="66" />
+			</node>
+			<node id="dishes">
+				<name>dishes</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="12" />
+				<position>830 427 929 488</position>
+				<barchart active="true" width="128" height="66" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
